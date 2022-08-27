@@ -27,7 +27,7 @@ def result():
     sc = joblib.load(scalar_path)
     X_std = sc.transform(X)
 
-    model_path = r'C:\Users\DELL\Desktop\Updated Code Bigmart\Models\lr.sav'
+    model_path = r'C:\Users\DELL\Desktop\Practice bigmart\Models\random_forest_grid.sav'
     model = joblib.load(model_path)
 
     Y_pred = model.predict(X_std)
